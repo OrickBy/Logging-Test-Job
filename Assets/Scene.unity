@@ -131,9 +131,6 @@ GameObject:
   m_Component:
   - component: {fileID: 842949445}
   - component: {fileID: 842949444}
-  - component: {fileID: 842949443}
-  - component: {fileID: 842949447}
-  - component: {fileID: 842949446}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -141,14 +138,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &842949443
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842949442}
-  m_Enabled: 1
 --- !u!20 &842949444
 Camera:
   m_ObjectHideFlags: 0
@@ -206,13 +195,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &842949446
+--- !u!1 &862677400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 862677403}
+  - component: {fileID: 862677402}
+  - component: {fileID: 862677401}
+  m_Layer: 0
+  m_Name: Demo EventService
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &862677401
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842949442}
+  m_GameObject: {fileID: 862677400}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1fa2af68fb8f421c8685ea3f333bfaa, type: 3}
@@ -221,13 +228,13 @@ MonoBehaviour:
   cooldownBeforeSend: 5
   serverUrl: http://httpbin.org/post
   maxSendEvents: 100
---- !u!114 &842949447
+--- !u!114 &862677402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842949442}
+  m_GameObject: {fileID: 862677400}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 430e857262dd744e7bdd9bfe87f7861b, type: 3}
@@ -236,3 +243,17 @@ MonoBehaviour:
   eventsToSec: 3
   eventType: levelStart
   genericNumber: 100
+--- !u!4 &862677403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862677400}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
